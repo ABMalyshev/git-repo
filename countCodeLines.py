@@ -1,6 +1,6 @@
 import glob
 
-countCharsFile = 0
+countLinesFiles = 0
 
 types = ['**/*.java', '**/*.js']
 
@@ -9,6 +9,6 @@ for type_of_files in types:
         with open(path) as file:
             linesInFile = len(file.readlines())
             print("Number of lines " + path + " - " + str(linesInFile))
-            countCharsFile += linesInFile
+            countLinesFiles += linesInFile
 
-print("Total number lines of code: " + str(countCharsFile))
+print("Total number lines of code: " + str(countLinesFiles))
